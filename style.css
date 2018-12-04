@@ -1,0 +1,327 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1.5; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* end eric meyer's reset */
+.clear:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden; }
+
+.clear {
+  display: inline-block; }
+
+/* hide IE mac \*/
+* html .clear {
+  height: 1%; }
+
+.clear {
+  display: block; }
+
+/* */
+.hidden {
+  display: none !important; }
+
+.invisible {
+  opacity: 0; }
+
+.fade {
+  transition: opacity 0.3s; }
+
+html {
+  height: 100%;
+  background-color: #121212; }
+
+strong {
+  color: #fff;
+  font-weight: bold; }
+
+a {
+  color: #fff; }
+
+h1, h2, h3, h4, h5, h6 {
+  color: #fff;
+  font-family: "Montserrat", Helvetica, sans-serif;
+  font-weight: bold;
+  margin: 0 auto;
+  line-height: 1.2;
+  letter-spacing: 0.1rem; }
+
+h1 {
+  font-size: 1.7rem;
+  margin-bottom: 2rem; }
+  h1 em {
+    color: #f33;
+    text-decoration: underline; }
+
+h2 {
+  font-size: 2.2rem;
+  margin: 1.5rem auto; }
+
+h3 {
+  font-size: 1.5rem; }
+
+body {
+  background: linear-gradient(180deg, #333, #161718 30rem);
+  color: #9c9c9c;
+  font-family: "Montserrat", Helvetica, sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: center; }
+  body > main {
+    max-width: 60rem;
+    margin: 0 auto;
+    padding: 2rem 1rem 0; }
+    body > main > p {
+      margin-bottom: 2rem; }
+  body > footer {
+    margin-top: 4rem;
+    color: #fff; }
+    body > footer .logo {
+      max-width: 30rem;
+      margin: 0 auto;
+      padding: 1rem 0;
+      background-color: #1a1b1c;
+      border-radius: 0.2rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      text-align: center;
+      position: relative; }
+      body > footer .logo img {
+        max-width: 18rem; }
+    body > footer > main {
+      margin-top: -3rem;
+      padding: 3rem 0 1rem;
+      background-color: #121212; }
+      body > footer > main .share {
+        max-width: 30rem;
+        margin: 2rem auto;
+        display: flex;
+        flex-wrap: wrap; }
+        body > footer > main .share a {
+          min-width: 14rem;
+          flex: 1; }
+      body > footer > main hr {
+        max-width: 30rem;
+        border: 1px solid #2b2c2e; }
+      body > footer > main .contact {
+        margin: 2rem auto;
+        font-size: 0.8rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-align: center; }
+        body > footer > main .contact a {
+          color: #858585; }
+  body section {
+    max-width: 45rem;
+    margin: 0 auto; }
+
+body.error h1 {
+  font-size: 4rem;
+  margin-bottom: 0; }
+body.error p {
+  margin-bottom: 0; }
+
+input {
+  min-width: 50%;
+  flex: 1;
+  border: none;
+  border-radius: 0.2rem;
+  font-size: 1.1rem;
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold; }
+
+input[type="submit"] {
+  color: #fff;
+  background: #f33;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  padding: 1.2rem;
+  -webkit-appearance: none; }
+  input[type="submit"]:hover {
+    cursor: pointer; }
+
+.petition {
+  margin-bottom: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  color: #fff;
+  text-align: left; }
+  .petition .left {
+    flex: 6;
+    margin-right: 2rem;
+    min-width: 100%; }
+  .petition .right {
+    flex: 7; }
+  .petition aside {
+    position: relative; }
+    .petition aside .politician {
+      margin-bottom: 2rem;
+      min-height: 24rem;
+      border-radius: 1rem;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      filter: grayscale(100%); }
+    .petition aside:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      border-radius: 1rem;
+      background-image: linear-gradient(-85deg, #f35353, #481e17);
+      mix-blend-mode: overlay;
+      opacity: 0.9; }
+  .petition p {
+    margin: 1rem 0;
+    font-size: 1.08rem; }
+  .petition .disclaimer {
+    color: #9c9c9c;
+    font-size: 0.8rem; }
+  .petition .message {
+    color: #f33;
+    font-size: 0.8rem; }
+  .petition form {
+    display: flex;
+    flex-wrap: wrap; }
+    .petition form input[name="member[email]"] {
+      flex: 3; }
+    .petition form input[name="member[postcode]"] {
+      min-width: 10%;
+      margin-left: 0.5rem; }
+
+button {
+  width: 96%;
+  padding: 0.8rem;
+  background-color: #7e7e7e;
+  color: #fff;
+  border: none;
+  border-radius: 0.3rem;
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 2; }
+  button:hover {
+    cursor: pointer; }
+  .facebook button {
+    background-color: #3456a2; }
+  .twitter button {
+    background-color: #2195cb; }
+  button svg {
+    max-width: 1.6rem;
+    max-height: 1.6rem;
+    margin: -0.2rem 0.4rem 0 0;
+    vertical-align: middle; }
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  background: rgba(0, 0, 0, 0.96);
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch; }
+  .overlay .wrapper {
+    width: 100%;
+    height: 100%;
+    display: table; }
+    .overlay .wrapper .cell {
+      display: table-cell;
+      vertical-align: middle; }
+    .overlay .wrapper .modal main {
+      border-radius: 0.2rem 0.2rem 0 0;
+      background-color: #1e1e1e;
+      padding: 2rem; }
+      .overlay .wrapper .modal main h2 {
+        margin-top: 0; }
+    .overlay .wrapper .modal footer {
+      background-color: #2a2a2a;
+      border-radius: 0 0 0.2rem 0.2rem;
+      padding: 2rem; }
+      .overlay .wrapper .modal footer .share {
+        display: flex;
+        flex-wrap: wrap; }
+        .overlay .wrapper .modal footer .share a {
+          min-width: 100%;
+          flex: 3; }
+          .overlay .wrapper .modal footer .share a:last-child {
+            flex: 2; }
+
+@media screen and (min-width: 640px) {
+  body {
+    font-size: 1.2rem; }
+    body > main {
+      padding: 4rem 1rem 0; }
+      body > main > p {
+        margin-bottom: 6rem; }
+
+  h1 {
+    font-size: 2.8rem;
+    margin-bottom: 6rem; }
+
+  h3 {
+    font-size: 1.8rem; }
+
+  .petition {
+    margin-bottom: 6rem; }
+    .petition .left {
+      min-width: 0; }
+
+  .overlay .modal footer .share {
+    flex-wrap: nowrap; }
+    .overlay .modal footer .share a {
+      min-width: 0; } }
